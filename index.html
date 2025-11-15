@@ -272,7 +272,7 @@ function renderQuestion(){
   ["A","B","C","D"].forEach(opt=>{
     let b=document.createElement("button"); 
     b.className="optBtn"; 
-    b.style.margin = "0 20px";   // DOUBLE GAP ADDED
+    b.style.margin = "0 40px";   // DOUBLE GAP ADDED
     b.textContent=opt;
     if(progress.answers[i]===opt)b.classList.add("selected");
     b.onclick=()=>{progress.answers[i]=(progress.answers[i]===opt?null:opt); renderPalette(); renderQuestion();};
